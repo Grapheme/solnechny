@@ -1466,6 +1466,14 @@ div.bron-onetop {
 }
 
 @media screen and (max-width: 480px) {
+	
+	.like-popup {
+    	position:absolute;
+    	font-size:0.8em;
+    	max-width:320px;
+    	max-height:380px;
+    	background: #ffffff;
+	}
 
     .nav-big { display: none; visibility: hidden;}
     .nav-small { display: inline; visibility: visible;}
