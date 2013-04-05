@@ -62,6 +62,47 @@ var z = 0,
 	i = 0;
 	
 $(function() {
+	
+	$(".pool-button .sbutton").click(function(){
+		$(".step-1").css("display","block");
+		$(".pool-button").css("display","none");
+		$(".step-2h").css("display","block");
+		$(".step-3h").css("display","block");
+	});
+	
+	$(".step-1 .b-button .sbutton").click(function(){
+		$(".step-1h").css("display","block");
+		$(".step-1").css("display","none");
+		$(".step-1h").addClass("step");
+		$(".step-2h").addClass("step");
+		$(".step-2").css("display","block");
+	});
+	
+	$(".step-2 .b-button .sbutton").click(function(){
+		$(".step-2h").css("display","block");
+		$(".step-2").css("display","none");
+		$(".step-3h").addClass("step");
+		$(".step-3").css("display","block");
+	});
+	
+	$(".step-3 .b-button .sbutton").click(function(){
+		$(".pool-rent.beg").css("display","none");
+		$(".pool-rent.end").css("display","inline");
+		$(".bron-other.step-3.beg").css("display","none");
+		$(".bron-other.end").css("display","block");
+	});
+	
+	$(".step-2 .bron-cancel").click(function(){
+		$(".step-1").css("display","block");
+		$(".step-1h").css("display","none");
+		$(".step-2").css("display","none");
+	});
+	
+	$(".step-3 .bron-cancel").click(function(){
+		$(".step-2").css("display","block");
+		$(".step-3h").removeClass("step");
+		$(".step-3").css("display","none");
+	});
 
 	$("a.like").click(function(event) {
 		if (z == 0) {

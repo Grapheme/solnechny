@@ -41,7 +41,7 @@ html,body {
 @font-face {
     font-family: 'Conv_FedraSansPro Medium';
     src: url('../fonts/FedraSansPro Medium.eot');
-    src: local('☺'), url('../fonts/FedraSansPro Medium.ttf') format('truetype'), url('../fonts/FedraSansPro Medium.svg') format('svg');
+    src: local('вє'), url('../fonts/FedraSansPro Medium.ttf') format('truetype'), url('../fonts/FedraSansPro Medium.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -49,7 +49,7 @@ html,body {
 @font-face {
     font-family: 'Conv_FedraSansPro Book';
     src: url('../fonts/FedraSansPro Book.eot');
-    src: local('☺'), url('../fonts/FedraSansPro Book.ttf') format('truetype'), url('../fonts/FedraSansPro Book.svg') format('svg');
+    src: local('вє'), url('../fonts/FedraSansPro Book.ttf') format('truetype'), url('../fonts/FedraSansPro Book.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -57,7 +57,7 @@ html,body {
 @font-face {
     font-family: 'Conv_VCN56';
     src: url('../fonts/VCN56.eot');
-    src: local('☺'), url('../fonts/VCN56.ttf') format('truetype'), url('../fonts/VCN56.svg') format('svg');
+    src: local('вє'), url('../fonts/VCN56.ttf') format('truetype'), url('../fonts/VCN56.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -464,7 +464,7 @@ footer .bottom {
     background-size: cover !important;
 }
 
-.page.afisha,.page.about,.page.contacts {
+.page.afisha,.page.about,.page.contacts,.page.bron {
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
@@ -482,6 +482,10 @@ footer .bottom {
 
 .page.contacts {
     background: url("../img/contacts.jpg") top center no-repeat fixed;
+}
+
+.page.bron {
+	background: url("../img/bron-back.jpg") top center no-repeat fixed;
 }
 
 .page.p404 {
@@ -646,7 +650,7 @@ footer .bottom {
     background: #84d7e9;
 }
 
-.big-option.res-now {
+.big-option.res.now {
     width: 22%;
     background:#77654f;
     color:#ffffff;
@@ -1316,9 +1320,7 @@ div.bron-onetop {
     text-transform: lowercase;
 }
 .date-d {
-	border-top: 1px solid #d4d3d1;
 	text-align: center;
-	margin-top: 1em;
 }
 
 .bron-inp {
@@ -1336,6 +1338,14 @@ div.bron-onetop {
     -webkit-box-shadow: inset 1px 1px 3px #eee;
     -moz-box-shadow: inset 1px 1px 3px #eee;
     box-shadow: inset 1px 1px 3px #eee;
+}
+
+.step {
+	color: #77654F !important;
+}
+
+.step-1,.step-2,.step-3,.step-1h,.step-2h,.step-3h {
+	display: none;
 }
 
 .bron-plan .bron-inp {
@@ -1493,6 +1503,50 @@ div.bron-onetop {
         clear: none !important;
     }
     .col.text {margin-bottom: 0;}
+    
+    @media screen and (max-height: 640px) {
+    	.page.afisha {
+    top: 0;
+    background: url("../img/afisha-back-m.jpg") top center no-repeat fixed;
+}
+
+.page.about {
+	background: url("../img/main-back-m.jpg") top center no-repeat fixed;
+}
+
+.page.contacts {
+    background: url("../img/contacts-m.jpg") top center no-repeat fixed;
+}
+
+.page.bron {
+	background: url("../img/bron-back-m.jpg") top center no-repeat fixed;
+}
+
+.main-1 {
+    background: url("../img/main-back-m.jpg") top center no-repeat fixed;
+    top:0;
+}
+
+.main-2 {
+    background: url("../img/main-back2-m.jpg") top center no-repeat fixed;
+    top:100%;
+}
+
+.main-3 {
+    background: url("../img/main-back3-m.jpg") top center no-repeat fixed;
+    top:200%;
+}
+
+.main-4 {
+    background: url("../img/main-back4-m.jpg") top center no-repeat fixed;
+    top:300%;
+}
+
+.main-5 {
+    background: url("../img/afisha-back-m.jpg") top center no-repeat fixed;
+    top:400%;
+}
+    }
 }
 
 @media screen and (max-height: 600px) {
@@ -1528,9 +1582,6 @@ div.bron-onetop {
     .index-menu { margin-bottom: 42px; }
     .med-menu { top: 202px; }
 }
-
-
-
 
 
 
