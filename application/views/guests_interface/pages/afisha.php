@@ -22,17 +22,14 @@
 					<div class="main-content" style="display: table; width: 100%;">
 						<div class="page-top">
 							<img class="star" src="<?=site_url('img/star.png');?>">
-							<!--<div class="afisha-title"><div class="title-line"></div>АФИША<div class="title-line"></div></div>
+							<div class="afisha-title"><div class="title-line"></div>АФИША<div class="title-line"></div></div>
 							<div class="page-title">Каждую субботу специально для вас мы проводим концерты известных артистов и ди-джеев.</div>
+							<!--
 							<div class="about-links">
 								<a class="about_link now" href="#">АНОНСЫ</a>
 								<a class="about_link" href="#">АРХИВ</a>
-							</div>-->
-							<div class="afisha-title"><div class="title-line"> </div>АФИША<div class="title-line"> </div></div>
-							<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- temporary case -->
-							<div class="page-title">Каждую субботу специально для вас мы проводим концерты известных <br/>артистов и ди-джеев.</div>
-							<div class="p404-bottom">О ближайшем мероприятии вы сможете узнать за неделю до открытия клуба.</div>
-							<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- temporary case -->
+							</div>
+							-->
 						</div>
 						<div class="afisha-con">
 							<div class="grid3">

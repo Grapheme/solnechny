@@ -36,7 +36,6 @@
 								<img src="<?=site_url('img/club/2.jpg');?>">
 								<img src="<?=site_url('img/club/3.jpg');?>">
 								<img src="<?=site_url('img/club/4.jpg');?>">
-								<img src="<?=site_url('img/club/5.jpg');?>">
 							</div>
 						</div>
 						<img class="photo-right" src="<?=site_url('img/photo-right.png');?>">
