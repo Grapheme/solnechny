@@ -283,6 +283,7 @@ footer .bottom {
 
 .afisha-inside {
     border: 1px solid #d9d9d9;
+    min-height: 22.5em;
 }
 
 .afisha-inside a {
@@ -296,7 +297,7 @@ footer .bottom {
 
 .afisha-date {
     position:absolute;
-    height: 60px;
+    height: 57px;
     width: 60px;
     background: #ffffff;
     margin: 20px 0 0 20px;
@@ -304,6 +305,7 @@ footer .bottom {
     color: #796450;
     font-family: "catorze27_style_1semibold";
     font-size: 1.2em;
+    padding-top: 3px;
 }
 
 .page-top {
@@ -343,7 +345,7 @@ footer .bottom {
 }
 
 .afisha-con {
-    margin: 0% 1.6% 1% 1.6%;
+    margin: 4em 2em;
 }
 
 .about-links {
