@@ -3,9 +3,6 @@
 class Users extends MY_Model{
 
 	var $id				= 0;
-	var $vkid			= 0;
-	var $class			= 4;
-	var $user_id		= 0;
 	var $email			= '';
 	var $photo			= '';
 	var $thumbnail		= '';
@@ -21,7 +18,7 @@ class Users extends MY_Model{
 	
 	function read_record($record_id,$table){
 		
-		$this->db->select('id,class,user_id,email,active,language');
+		$this->db->select('id,email,active,language');
 		$query = $this->db->get_where('users',array('id'=>$record_id),1,0);
 		$data = $query->result_array();
 		if($data) return $data[0];
@@ -38,29 +35,9 @@ class Users extends MY_Model{
 		return $this->db->insert_id();
 	}
 	
-	function update_record($data){
-	
-		if(isset($data['photo']) && !empty($data['photo'])):
-			$this->db->set('photo',$data['photo']);
-			$this->db->set('thumbnail',$data['thumbnail']);
-		endif;
-		$this->db->set('language',$data['language']);
-		$this->db->where('id',$data['id']);
-		$this->db->update('users');
-		return $this->db->affected_rows();
-	}
-	
-	function set_base_lang($language,$base_lang){
-
-		$this->db->set('language',$base_lang);
-		$this->db->where('language',$language);
-		$this->db->update('users');
-		return $this->db->affected_rows();
-	}
-	
 	function auth_user($login,$password){
 		
-		$this->db->select('id,class,user_id,active');
+		$this->db->select('id,active');
 		$this->db->where('email',$login);
 		$this->db->where('password',md5($password));
 		$query = $this->db->get('users',1);
@@ -97,26 +74,6 @@ class Users extends MY_Model{
 		$data = $query->result_array();
 		if(count($data)) return $data[0]['id'];
 		return FALSE;
-	}
-	
-	function classListByPages($class,$count,$offset){
-	
-		$this->db->where('class',$class);
-		$this->db->order_by('signdate','DESC');
-		$this->db->order_by('id','DESC');
-		$this->db->limit($count,$offset);
-		$query = $this->db->get('users');
-		$data = $query->result_array();
-		if(count($data)) return $data;
-		return NULL;
-	}
-
-	function countClassList($class){
-		
-		$this->db->where('class',$class);
-		$count = $this->db->count_all_results('users');
-		if($count) return $count;
-		return 0;
 	}
 	
 }
