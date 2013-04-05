@@ -26,6 +26,8 @@ $route['bron'] = "guests_interface/page";
 $route['afisha'] = "guests_interface/afisha";
 $route['afisha/:any'] = "guests_interface/afishaView";
 
+$route['log-off'] = "guests_interface/logoff";
+
 /********** loading image *************/
 $route['loadimage/:any/:num'] = "guests_interface/loadimage";
 /*************************************************** ADMIN INTRERFACE ***********************************************/
