@@ -1,0 +1,19 @@
+Перед установкой проекта на локальной машине прочитайте этот файл и выполните следующие действия:
+0) Настроить Web сервер и сервер БД MySQL на локальной машине (к примеру http://www.denwer.ru/)
+1) Нужно создать каталог на жеском диске и клонировать проект с githab.com
+------ git clone git@github.com:Grapheme/solnechny.git
+2) Настроить проект для работы:
+2.1) В файле js/vendor/base.js найти срочку:
+	mt.baseURL = window.location.protocol+'//'+window.location.hostname+'/';
+	и присвоить значению mt.baseURL доменное имя. Пример: mt.baseURL = "http://localhost/solnechny-club/";
+2.2) В файле application/config/config.php найти срочку:
+	$config['base_url'] = "http://dev.grapheme.ru/solnechny-club/";
+	и присвоить значению $config['base_url'] доменное имя. Пример: $config['base_url'] = "http://localhost/solnechny-club/";
+2.3) В файле .htaccess найти срочку:
+	RewriteBase /
+	и назначить RewriteBase значени /имя_каталога - если проект лежит не в корне. К примеру RewriteBase значени /dev
+2.4) В файле application/config/database.php нужно указать параметры БД:
+	$db['default']['username'] = "root"; - имя пользователя
+	$db['default']['password'] = ""; - пароль
+	$db['default']['database'] = "solnechny"; - имя БД
+3) Необходимо создать БД с именем равным $db['default']['database'] и Импортировать данных с файла solnechny.sql.zip
