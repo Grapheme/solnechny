@@ -1,0 +1,1728 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-family:Verdana,Tahoma,Arial,Sans-Serif;
+    font-size: 100%;
+    line-height: 1.4;
+}
+
+html,body {
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'catorze27_style_1semibold';
+    src: url('../fonts/scannerlicker_-_catorze27style1-semibold-webfont.eot');
+    src: url('../fonts/scannerlicker_-_catorze27style1-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/scannerlicker_-_catorze27style1-semibold-webfont.woff') format('woff'),
+    url('../fonts/scannerlicker_-_catorze27style1-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_FedraSansPro Medium';
+    src: url('../fonts/FedraSansPro Medium.eot');
+    src: local('☺'), url('../fonts/FedraSansPro Medium.ttf') format('truetype'), url('../fonts/FedraSansPro Medium.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_FedraSansPro Book';
+    src: url('../fonts/FedraSansPro Book.eot');
+    src: local('☺'), url('../fonts/FedraSansPro Book.ttf') format('truetype'), url('../fonts/FedraSansPro Book.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_VCN56';
+    src: url('../fonts/VCN56.eot');
+    src: local('☺'), url('../fonts/VCN56.ttf') format('truetype'), url('../fonts/VCN56.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+nav, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+
+.white-div {
+    width:100%;
+    background: #ffffff;
+    color: #796450;
+}
+
+/* col */
+.col {
+    float: left;
+    margin-left: 3.2%;
+    margin-bottom: 30px;
+}
+
+/* grid4 col */
+.grid4 .col {
+    width: 22.6%;
+}
+
+/* grid3 col */
+.grid3 .col {
+    width: 31.2%;
+}
+
+/* grid2 col */
+.grid2 .col {
+    width: 48.4%;
+}
+
+.grid4 .col:nth-of-type(4n+1),
+.grid3 .col:nth-of-type(3n+1),
+.grid2 .col:nth-of-type(2n+1) {
+    margin-left: 0;
+    clear: left;
+}
+
+.page {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -273px;
+}
+
+.page.p404 {
+    margin: 0 auto -113px !important;
+}
+
+footer div{
+    font-family:'Conv_FedraSansPro Book',Sans-Serif;
+    color: #fbefe1;
+}
+
+footer .middle.p404 {
+    height: 100px !important;
+}
+
+.page.p404 .push {
+    height: 113px !important;
+}
+
+footer.p404 {
+    height: 113px !important;
+}
+
+footer,.push {
+    height: 273px;
+}
+
+footer .top {
+    height: 5px;
+    background: url("../img/footer-top.png") repeat-x;
+}
+
+footer .middle {
+    color: #ffffff;
+    text-align: center;
+    height: 260px;
+    background: url("../img/footer.png") repeat;
+    margin: 0;
+}
+
+footer .bottom {
+    height:7px;
+    background: #4dc5e0;
+}
+
+.footer-top {
+    font-size: 0.9em;
+    padding-top:30px;
+}
+
+.footer-middle {
+    margin-bottom: 5px;
+    font-size: 0.8em;
+}
+
+.footer-bottom {
+    font-size: 0.8em;
+}
+
+.footer-bottom a {
+    color: #4DC5E0;
+}
+
+.footer-imgs {
+    display: inline-block;
+    margin: 15px 0 8px 0;
+}
+
+.soc-button {
+    display: block;
+    float: left;
+    width:50px;
+    height:50px;
+    line-height: 50px;
+
+}
+.soc-button.index {
+    margin:0 0 3px 0;
+    text-align: center;
+    background: #ffffff;
+    float: none;
+}
+
+.facebook img {
+    width: 8px;
+    height: 16px;
+}
+
+.soc-button.index.facebook:hover {
+    background: #3b5998;
+}
+
+.soc-button.index.twitter:hover {
+    background: #00c3f8;
+}
+
+.about-photo {
+	width:93%;
+}
+
+.afisha-div {
+    float: left;
+}
+
+.afisha-inside {
+    border: 1px solid #d9d9d9;
+}
+
+.afisha-inside a {
+    color: #796450;
+    text-decoration: none;
+}
+
+.afisha-img {
+    width:100%;
+}
+
+.afisha-date {
+    position:absolute;
+    height: 60px;
+    width: 60px;
+    background: #ffffff;
+    margin: 20px 0 0 20px;
+    text-align: center;
+    color: #796450;
+    font-family: "catorze27_style_1semibold";
+    font-size: 1.2em;
+}
+
+.page-top {
+    text-align: center;
+    width: 100%;
+    color: #796450;
+    margin-top: 20px;
+	margin-bottom: 1% !important;
+}
+
+.afisha-title {
+    font-family:'Conv_FedraSansPro Medium',Sans-Serif;
+    font-size: 2.5em;
+    color: #796450;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px #ffffff, 4px 4px 0px #d5d0ca;
+}
+
+.title-line {
+    display: inline-block;
+    width:40px;
+    height:3px;
+    margin: 0 0.3em 0.3em 0.3em;
+    background: #796450;
+}
+
+.afisha-text {
+    font-family:'Conv_FedraSansPro Book',Sans-Serif;
+    font-size: 0.8em;
+    margin: 10px;
+}
+
+.afisha-text p {
+    font-family:'Conv_FedraSansPro Medium',Sans-Serif;
+    font-size: 1.3em;
+}
+
+.afisha-con {
+    margin: 0% 1.6% 1% 1.6%;
+}
+
+.about-links {
+    font-family:'Conv_FedraSansPro Medium',Sans-Serif;
+    font-size: 0.8em;
+	margin:3% auto;
+}
+
+.star {
+    margin: 10px 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo.main {
+    cursor: pointer;
+    position: fixed;
+    left:50%;
+    margin-left:-110px;
+    margin-top: 1em;
+    z-index: 99;
+}
+
+.container {
+    max-width:1140px;
+    text-align: center;
+    margin:0 auto !important;
+}
+
+.share-div {
+    position: fixed;
+    z-index: 99;
+    top: 2.5%; left: 2.5%; right:2.5%;
+}
+
+.circle-inv, .circle {
+    display: block;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-150px;
+    margin-top:-150px;
+    height:300px;
+    width:300px;
+    border-radius: 150px;
+}
+
+.circle-inv {
+    -webkit-transition: background 0.5s ease;
+    -moz-transition:    background 0.5s ease;
+    -o-transition:      background 0.5s ease;
+    transition:         background 0.5s ease;
+    color: #77654f;
+    text-decoration: none;
+}
+
+.circle {
+    opacity: 0.8;
+    background: #ffffff;
+}
+
+.circle-inv:hover {
+    color: #ffffff;
+    background: #77654f;
+}
+
+.circle-div {
+    position: relative;
+    line-height: 1em;
+    top:60px;
+    height:150px;
+    width:200px;
+    margin:0 auto;
+    text-align: center;
+}
+
+.circle-div .title {
+    font-family:'Conv_FedraSansPro Medium',Sans-Serif;
+    line-height: 1.5em;
+    font-size:1.5em;
+}
+
+.circle-div .text {
+    font: 0.85em/1.25em 'Conv_VCN56',Sans-Serif;
+    margin-top: 10px;
+}
+
+.circle-div img {
+    margin-bottom: 10px;
+}
+
+.main-arrow-up,.main-arrow-down {
+	cursor: pointer;
+	opacity: 0.5;
+	position: absolute;
+	top:80%;
+	left:50%;
+	margin-left:-16px;
+}
+
+.main-1,.main-2,.main-3,.main-4,.main-5 {
+	min-width:320px;
+	min-height:480px;
+    position:absolute;
+    width:100%;
+    height:100.1%;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+}
+
+.page.afisha,.page.about,.page.contacts {
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+}
+
+.page.afisha {
+    top: 0;
+    background: url("../img/afisha-back.jpg") top center no-repeat fixed;
+}
+
+.page.about {
+	background: url("../img/main-back.jpg") top center no-repeat fixed;
+}
+
+.page.contacts {
+    background: url("../img/contacts.jpg") top center no-repeat fixed;
+}
+
+.page.p404 {
+    background: #f3f2f0;
+}
+
+.main-1 {
+    background: url("../img/main-back.jpg") top center no-repeat fixed;
+    top:0;
+}
+
+.main-2 {
+    background: url("../img/main-back2.jpg") top center no-repeat fixed;
+    top:100%;
+}
+
+.main-3 {
+    background: url("../img/main-back3.jpg") top center no-repeat fixed;
+    top:200%;
+}
+
+.main-4 {
+    background: url("../img/main-back4.jpg") top center no-repeat fixed;
+    top:300%;
+}
+
+.main-5 {
+    background: url("../img/afisha-back.jpg") top center no-repeat fixed;
+    top:400%;
+}
+
+.nav-container {
+    position: fixed;
+    z-index: 20;
+    width:100%;
+    bottom: 3%;
+}
+
+.nav a {
+    color:#000000;
+    text-decoration: none;
+}
+
+
+
+.page-container {
+    max-width:1140px;
+    min-width:320px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    margin:0 auto 75px !important;
+}
+
+.nav {
+    font-family:'Conv_FedraSansPro Medium',Sans-Serif;
+    margin-top:25px;
+    max-width: 100%;
+    overflow: hidden;
+    font-size:0.8em;
+    white-space: nowrap;
+}
+
+.nav.index {
+    margin-top: 0 !important;
+}
+
+.position {
+    z-index: 100;
+    position: fixed;
+    right:2.5%;
+    top:50%;
+    height:132px;
+    margin-top:-66px;
+}
+
+.position-circle {
+    cursor: pointer;
+    width:12px;
+    height:12px;
+    border-radius: 6px;
+    margin-top: 12px;
+    background: #ffffff;
+}
+
+.position-circle.on {
+    background: #4DC5E0;
+}
+
+.med-mar {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.nav-big {
+    max-width: 1140px;
+    margin:0 auto;
+}
+
+.index .nav-big {
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+}
+
+.nav-med {
+    margin: 0 auto;
+    display: none;
+    visibility: hidden;
+}
+
+.nav-small {
+    position: fixed;
+    z-index:20;
+    bottom:0;
+    left:0;
+    right:0;
+    display: none;
+    visibility: hidden;
+}
+
+.big-option {
+    width: 13%;
+}
+
+.med-option {
+    width:50%;
+}
+
+.small-option {
+    width:50%;
+    margin-bottom:0;
+}
+
+.index-menu {
+    display: none;
+    visibility: hidden;
+    z-index: 1;
+    position: fixed;
+    left: 2.5%;
+    bottom: 3%;
+    margin-bottom: 51px;
+    height: 306px;
+    width: 47.55%;
+}
+
+.big-option, .med-option, .small-option, .med-menu-opt, .index-option {
+    text-align: center;
+    float: left;
+    background: #4dc5e0;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition:    background 0.3s ease;
+    -o-transition:      background 0.3s ease;
+    transition:         background 0.3s ease;
+}
+
+.index-option { float: none !important; display: block;}
+
+.big-option:hover {
+    background: #84d7e9;
+}
+
+.big-option.now {
+    background: #84d7e9;
+}
+
+.big-option.res-now {
+    width: 22%;
+    background:#77654f;
+    color:#ffffff;
+}
+
+.res.mb {
+    background:#77654f;
+    color:#ffffff;
+}
+
+.med-option:hover {
+    background: #84d7e9;
+}
+.small-option:hover {
+    background: #84d7e9;
+}
+.index-option:hover {
+    background: #84d7e9;
+}
+
+.res {
+    position: relative;
+    background: #f9f5e0;
+}
+
+.res-img {
+    position: relative;
+    right:5%;
+}
+
+.res:hover {
+    background:#77654f;
+    color:#ffffff;
+}
+
+.res.big{
+    width: 22%;
+}
+
+.big-option, .med-option, .small-option {
+    line-height: 51px;
+    height: 51px;
+}
+
+.med-menu {
+    display: none;
+    visibility: hidden;
+    z-index: 1;
+    position: absolute;
+    left:2.5%;
+    top:211px;
+    height: 306px;
+    width: 47.55%;
+}
+
+.med-menu-opt,.index-option {
+    font-family: "Conv_FedraSansPro Medium";
+    font-size: 0.8em;
+    color:#000000;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    height: 51px;
+    line-height: 51px;
+    width:100%;
+    background: #4dc5e0;
+}
+
+.med-menu-opt:hover {
+    background: #84d7e9;
+}
+
+.nav-border {
+    width: 3px;
+    float: left;
+}
+
+.top-med {
+    visibility: hidden;
+    display: none;
+}
+
+.about_link {
+	text-decoration:none;
+	border-bottom: 1px dotted #43b2ca;
+	color: #43b2ca;
+	margin: 0 15px 0 15px;
+}
+
+.about_link.now {
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #77654f;
+    color: #77654f;
+}
+
+
+.plan-div {
+    position: relative;
+    margin-left: -515px;
+    width:1030px;
+    left:50%;
+}
+.plan-photo {
+    width:1030px;
+}
+
+.plan-con {
+    width:100%;
+    overflow-x: auto;
+}
+
+.plan-text {
+    z-index: 1;
+    position: absolute;
+    margin-left: 25px;
+	padding-right: 10px;
+    opacity: 0;
+    font-size: 0.8em;
+    height: 44px;
+    width:270px;
+    background: #ffffff;
+    padding-left: 25px;
+    padding-top: 6px;
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition:    opacity 0.5s ease;
+    -o-transition:      opacity 0.5s ease;
+    transition:         opacity 0.5s ease;
+    left: -9999px;
+}
+
+.plan-text.right {
+    margin-left: -280px;
+    padding-right: 25px;
+    padding-left: 10px;
+}
+.plan-wrapper {
+    position: absolute;
+}
+
+.plan-wrapper img {
+    position: absolute;
+    z-index: 2;
+}
+
+.plan-wrapper:hover .plan-text {
+    opacity: 1;
+    left: 0;
+}
+
+.plan-circle-ball {
+    top:40px;
+    left:840px;
+}
+.plan-circle-cir {
+    top:200px;
+    left:640px;
+}
+.plan-circle-ambr {
+    top:600px;
+    left:745px;
+}
+.plan-circle-park2 {
+	top: 865px;
+	left: 590px;
+}
+.plan-circle-vip1{
+	top:760px;
+	left:590px;
+}
+.plan-circle-vip2 {
+	top:710px;
+	left:900px;
+}
+.plan-circle-park {
+    top:480px;
+    left:180px;
+}
+.plan-circle-hor {
+    top:620px;
+    left:260px;
+}
+.plan-circle-bar {
+	top:500px;
+	left:940px;
+}
+.plan-circle-shiptop {
+    top:340px;
+    left:380px;
+}
+.plan-circle-ship {
+    top:740px;
+    left: 350px;
+}
+.plan-circle-show {
+    top:675px;
+    left:430px;
+}
+.plan-circle-star {
+    top:565px;
+    left:355px;
+}
+.plan-circle-shipright {
+    top: 390px;
+    left: 640px;
+}
+
+.page-title {
+    font-family:'Conv_VCN56',Sans-Serif;
+    margin: 1em 7% 2em 7%;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.page-main-text {
+    font-family:'Conv_FedraSansPro Book',Sans-Serif;
+    font-size: 0.9em;
+    line-height: 1.8em;
+    margin: 0 7% 0 7%;
+}
+
+.page-sub-text {
+    font-family:'Conv_VCN56',Sans-Serif;
+    font-size: 0.9em;
+    line-height: 1.6em;
+    margin: 2em 7% 2em 7%;
+}
+
+.page-sub-text.in404 {
+    font-size: 1em !important;
+    color: #77654f;
+}
+
+.page-sub-text img {
+    margin-right: 3.5em;
+    float: left;
+}
+
+.p404-bottom {
+    font-family: "Conv_FedraSansPro Book";
+    font-size: 0.8em;
+    color: #77654f;
+}
+
+.p404-bottom a {
+    color: #43b2ca;
+    text-decoration: none;
+    border-bottom: 1px solid #43b2ca;
+}
+
+.plan-title {
+    font-family:'Conv_FedraSansPro Medium',Sans-Serif;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 2em 0 2em 0;
+}
+
+.pool-rent {
+    font-family: "Conv_FedraSansPro Book";
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 2em;
+}
+
+.pool-button {
+    text-align: center;
+    margin-top: 2em;
+    padding-bottom: 5em;
+}
+
+.plan-title {
+    margin: 2em 0 1.25em 0;
+}
+
+.rules {
+    font-family:'Conv_FedraSansPro Book',Sans-Serif;
+    font-size: 0.9em;
+    line-height: 1.8em;
+    margin: 0 7% 0 7%;
+}
+
+.rule {
+    margin: 1em 0 1em 0;
+    overflow: hidden;
+}
+
+.dot {
+    font-size: 1.2em;
+    color: #43b2ca;
+    float:left;
+    width:2%;
+    margin-right: 2%;
+}
+
+.rule-text {
+    width:96%;
+    float: left;
+}
+
+.work-time {
+    text-align: center;
+    padding: 7em 0 5em 0;
+    line-height: 2em;
+}
+
+.child-phone {
+    text-align: center;
+    margin-top: 1em;
+    padding-bottom: 5em;
+}
+
+.wt-text {
+    font-family:'Conv_VCN56',Sans-Serif;
+}
+
+.work-time img {
+    margin-top: 1.5em;
+}
+
+.wt-title {
+    font-family:'Conv_FedraSansPro Medium',Sans-Serif;
+    font-size: 1.1em;
+}
+
+.event-title {
+    margin-top: 2.5%;
+    font-family:'Conv_FedraSansPro Medium',Sans-Serif;
+    font-size: 1.5em;
+}
+
+.event {
+    text-align: center;
+}
+
+.event-desc {
+    font-family:'Conv_VCN56',Sans-Serif;
+    margin: 1em 10% 1em 10%;
+    text-align: center;
+    font-size: 1em;
+}
+
+.event-photo {
+    max-width: 80%;
+    border: 1px solid #D9D9D9;
+}
+
+.event-date {
+    margin: 1.5em 0 0 0;
+    font-family: 'Conv_FedraSansPro Medium',Sans-Serif;
+}
+
+.event-time {
+    font-family: 'Conv_FedraSansPro Medium',Sans-Serif;
+    font-size: 0.6em;
+    margin: 1.5em 0 0 0;
+}
+
+.event-time .time {
+    font-size: 1.8em;
+}
+
+.event-text {
+    font-family:'Conv_FedraSansPro Book',Sans-Serif;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    margin: 1.5em 10% 0 10%;
+    width:80%;
+}
+
+.event-button {
+    padding: 2em 0 4em 0;
+}
+
+.like-popup {
+    position:absolute;
+    width:380px;
+    height:435px;
+    background: #ffffff;
+}
+
+.like-inside {
+    position: absolute;
+    text-align: center;
+    width:100%;
+}
+
+.like-title {
+    font-family: 'Conv_FedraSansPro Medium',Sans-Serif;
+    font-size: 1.2em;
+}
+
+.like-sub {
+    font-family:'Conv_VCN56',Sans-Serif;
+    font-size: 0.9em;
+}
+.like-line {
+    display: block;
+    height: 2px;
+    width:30px;
+    background: #77654f;
+    margin: 1em auto;
+}
+.social-likes { 
+	clear: both;
+	margin: 2em 0 2em 4em;
+}
+.social-likes .one__item, .slide-likes .one__item { float: left; margin: 0 0.5em;  }
+.slide-likes .one__item:first-child { margin: 0 5em 0 4em; }
+.like-text {
+    font-family:'Conv_FedraSansPro Book',Sans-Serif;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    width: 80%;
+    margin: 0 10% 0 10%;
+}
+
+.slide-likes {
+    display: none;
+    margin: 0 auto 2em;
+    width: 570px;
+}
+
+.sbutton {
+    font-family: 'Conv_FedraSansPro Medium',Sans-Serif;
+    font-size: 0.9em;
+    background: #4dc5e0;
+    color: #ffffff;
+    padding: 10px 35px 10px 35px;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 3px solid #46b2ca;
+}
+
+.sbutton:hover {
+    background: #7ed0e3;
+    border-color: #46b2ca;
+}
+
+.sbutton:active {
+    color: #b0e5f1;
+    background: #4dc5e0;
+    border-bottom: none;
+    border-top: 3px solid #46b2ca;
+}
+
+.contacts {
+    text-align: center;
+    line-height: 1.8em;
+}
+
+.cont-text {
+    font-family:'Conv_FedraSansPro Book',Sans-Serif;
+    font-size: 0.9em;
+}
+
+.ya-map-link {
+    margin: 0.5em 0 2em 0;
+}
+
+.ya-map-link a {
+    font-family: 'Conv_FedraSansPro Medium',Sans-Serif;
+    font-size: 0.7em;
+    text-decoration:none;
+    border-bottom: 1px dotted #43b2ca;
+    color: #43b2ca;
+    margin: 0.5em 0 2em 0;
+}
+
+.cont-email {
+    font-family: 'Conv_FedraSansPro Medium',Sans-Serif;
+    font-size: 1em;
+    text-decoration: none;
+    border-bottom: 1px solid #43b2ca;
+    color: #43b2ca;
+}
+
+.cont-title {
+    font-family: 'Conv_FedraSansPro Medium',Sans-Serif;
+    font-size: 1.2em;
+    margin-top: 2em;
+}
+
+.cont-title.feed {
+    margin: 0.35em 0 1em;
+}
+
+.cont-error {
+    font-family: "Conv_FedraSansPro Book";
+    font-size: 0.7em;
+    color: #cc0000;
+    display: none;
+}
+
+.cont-inp.error {
+    border-color: #cc0000;
+}
+
+.feedback {
+    box-shadow: 0px 0px 5px #DDDCDA inset;
+    border-top: 1px solid #d4d3d1;
+    border-bottom: 1px solid #d4d3d1;
+    text-align: center;
+    width: 100%;
+    margin-top: 2em;
+    padding: 1em 0 2em 0;
+    background: url('../img/feedback.png');
+}
+
+.cont-inp-div {
+    margin: 0.5em auto;
+    width:500px;
+}
+
+.cont-inp {
+	width: 100%;
+	color: #cec6be;
+	font-family: "Conv_FedraSansPro Book", sans-serif;
+	font-size: 14px;
+	padding: 7px 10px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	border: 1px solid #d1cac5;
+	margin-bottom: 0.5em;
+	height: 35px;
+	line-height: 35px;
+	-webkit-box-shadow: inset 1px 1px 3px #eee;
+	   -moz-box-shadow: inset 1px 1px 3px #eee;
+			box-shadow: inset 1px 1px 3px #eee;
+}
+textarea.cont-inp { height: 125px; }
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #c0c0c0;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #c0c0c0;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #c0c0c0;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #c0c0c0;
+}
+
+.cont-send {
+    text-align: center;
+    padding: 1em 0 1em 0;
+}
+
+.about-img-div {
+	position: relative;
+	width: 90%;
+	float: left;
+	margin: 0 5% 0 5%;
+}
+
+.about-con {
+	width:100%;
+	height:100%;
+	position:relative;
+	overflow: hidden;
+}
+
+.photo-left,.photo-right {
+	opacity: 0.3;
+	cursor: pointer;
+	position:absolute;
+}
+
+.photo-left:hover {
+	opacity: 1;
+}
+
+.photo-right:hover {
+	opacity: 1;
+}
+
+.photo-left {
+	margin-top:-16px;
+	top:50%;
+	left:2.5%;
+	margin-left:-8px;
+}
+
+.photo-right {
+	margin-top:-16px;
+	top:50%;
+	right:0;
+	right:2.5%;
+	margin-right:-8px;
+}
+
+.con-404 {
+    position: relative;
+    margin: 5em 0 5em 0;
+    text-align: center;
+}
+
+
+input.date {
+	margin-left: 2em;
+    cursor: pointer;
+    background: url('../img/cal.jpg') right no-repeat;
+}
+
+div.bron-onetop {
+	border-top: 1px solid #d4d3d1;
+    text-align: center;
+    margin: 1em 0 1em 0;
+}
+
+.bron-onebottom {
+	font-family: "Conv_FedraSansPro Book";
+	font-size: 0.9em;
+	text-transform: uppercase;
+	text-align:center;
+	height: 70px;
+	border-bottom: 1px solid #d4d3d1;
+	}
+
+.bron-onebottom div {
+	line-height: 70px;
+	float: left;
+	margin: 0 2em 0 2em;
+}
+
+.b-button {
+	float: right !important;
+}
+
+.bron-other {
+	font-family: "Conv_FedraSansPro Book";
+	font-size: 0.9em;
+	text-transform: uppercase;
+	text-align:center;
+	height: 70px;
+	line-height: 70px;
+	border-bottom: 1px solid #d4d3d1;
+	color: #bcafa6;
+}
+
+.bron-plan {
+	box-shadow: 0px 0px 5px #DDDCDA inset;
+    border-top: 1px solid #d4d3d1;
+    border-bottom: 1px solid #d4d3d1;
+    text-align: center;
+    width: 100%;
+    padding: 1em 0 1em 0;
+    background: url('../img/feedback.png');
+}
+
+.date-title {
+    text-transform: uppercase;
+    font-family: "Conv_FedraSansPro Medium";
+    font-size: 0.9em;
+}
+
+.date-date {
+    text-transform: uppercase;
+    font-family: "Conv_FedraSansPro Book";
+    font-size: 0.9em;
+}
+
+.date-step {
+    font-size: 0.9em;
+    font-family: "Conv_VCN56";
+    text-transform: lowercase;
+}
+.date-d {
+	border-top: 1px solid #d4d3d1;
+	text-align: center;
+	margin-top: 1em;
+}
+
+.bron-inp {
+	color: #77654F;
+    width: 250px;
+    font-family: "Conv_FedraSansPro Book", sans-serif;
+    font-size: 14px;
+    padding: 7px 10px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px solid #d1cac5;
+    height: 25px;
+    line-height: 25px;
+    -webkit-box-shadow: inset 1px 1px 3px #eee;
+    -moz-box-shadow: inset 1px 1px 3px #eee;
+    box-shadow: inset 1px 1px 3px #eee;
+}
+
+.bron-plan .bron-inp {
+	margin: 0 0 1em 0;
+}
+
+.bron-con-title {
+	font-family: "Conv_FedraSansPro Book";
+	font-size: 0.8em;
+}
+
+.bron-cancel {
+	text-transform: uppercase;
+    font-family: "Conv_FedraSansPro Medium";
+    font-size: 0.9em;
+    color: #00C3F8;
+}
+
+.bron-other div {
+	margin: 0 2em 0 0;
+}
+
+.booked {
+	position: relative;
+	width:60%;
+	background: #ffffff;
+	margin: 0 auto;
+	border: 1px solid #d4d3d1;
+	overflow: hidden;
+}
+
+.left-dashed {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 8%;
+	height:100%;
+	border-right: 1px dashed #d4d3d1;
+}
+
+.booked-left,.booked-right {
+	font-family: "Conv_FedraSansPro Book";
+    font-size: 11px;
+	text-align: left;
+	float: left;
+	position: relative;
+	width: 46%;
+	margin: 1em 2% 1em 2%;
+}
+.booked-left {
+	left:8%;
+}
+
+.booked-left .table div { padding: 1em 0 1em 0; }
+.booked-right .table div { padding: 1em 0 1em 0; }
+
+.booked-title {
+	text-transform: uppercase;
+}
+
+.booked-val {
+	font-size:14px;
+}
+
+.table {display:table}
+.table div {display:table-row;}
+.table div:first-child { padding-right: 2em;}
+.table div div {display:table-cell}
+
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .nav-big { display: none; visibility: hidden;}
+    .nav-med { display: inline; visibility: visible;}
+    .container { max-width: 768px; }
+    .afisha-div { min-width: 48.4%; }
+    .top-big { visibility: hidden; display: none; }
+    .top-med { visibility: visible; display: inline;}
+    .event-photo { max-width: 90%; }
+    .cont-inp-div { width:400px; }
+    .med-menu { z-index: 101; visibility: visible; }
+    .afisha-title { font-size: 2.3em; }
+    .title-line { width: 30px; }
+    .index-menu { visibility: visible; z-index: 101; }
+    .booked { width: 85%; }
+	.circle-inv, .circle {
+        margin-left:-137.5px;
+        margin-top:-137.5px;
+        height:275px;
+        width:275px;
+        border-radius: 137.5px;
+    }
+	.circle-div {
+        top:50px;
+    }
+    /* change grid3 to 2-column */
+    .grid3 .col {
+        width: 48.4%;
+    }
+    .grid3 .col:nth-of-type(3n+1) {
+        margin-left: 3.2%;
+        clear: none;
+    }
+    .grid3 .col:nth-of-type(2n+1) {
+        margin-left: 0;
+        clear: left;
+    }
+    .page-main-text .col{
+        width: 100% !important;
+        margin-left: 0 !important;
+        clear: none !important;
+    }
+    .rules .col {
+        width: 100% !important;
+        margin-left: 0 !important;
+        clear: none !important;
+    }
+    .col.text {margin-bottom: 0;}
+}
+
+@media screen and (max-width: 480px) {
+
+    .nav-big { display: none; visibility: hidden;}
+    .nav-small { display: inline; visibility: visible;}
+    .container { max-width: 400px; }
+    .afisha-div { margin:0;}
+    .top-big { visibility: hidden; display: none; }
+    .top-med { visibility: visible; display: inline; }
+    .page-container { padding:0; }
+	.about-img-div { width: 100%; margin: 0; }
+	.about-links { visibility: hidden; display: none; }
+    .event-photo { max-width: 95%; }
+    .event-text { width:95%; margin: 0 2.5% 0 2.5%; }
+    .cont-inp-div { width:95%; }
+    .photo-left,.photo-right { visibility: hidden; display: none; }
+    .med-menu { z-index: 101; visibility: visible; width: 50%; left:0; }
+    .afisha-title { font-size: 1.8em; }
+    .title-line { width: 20px; }
+    .index-menu { visibility: visible; left:0; bottom:0; width: 50%; z-index: 101;}
+    .booked { width: 95%; }
+    .logo.main img { max-width: 200px; margin-left:10px !important; margin-top: 0;}
+	.circle-inv, .circle {
+        margin-left:-125px;
+        margin-top:-125px;
+        height:250px;
+        width:250px;
+        border-radius: 125px;
+    }
+    .title-line.bron { display: none; visibility: hidden;}
+	.circle-div {
+        top:40px;
+    }
+    .col {
+        width: 100% !important;
+        margin-left: 0 !important;
+        clear: none !important;
+    }
+    .col.text {margin-bottom: 0;}
+}
+
+@media screen and (max-height: 600px) {
+	.circle-inv, .circle {
+		top:55% !important;
+        margin-left:-100px;
+        margin-top:-100px;
+        height:200px;
+        width:200px;
+        border-radius: 100px;
+    }
+    .circle-div {
+        top:20px;
+        width: 150px;
+    }
+    .circle-div img {
+    	max-width:30px;
+    	max-height:30px;
+    }
+    .circle-div .title {
+    	white-space:nowrap;
+    	font-size:1.2em;
+    }
+    .circle-div .text {
+    	margin-top:0;
+    	font-size:0.8em;
+    }
+    .logo.main img { max-width: 9em; }
+    .logo.main { margin-left: -5em; margin-top: 0.2em; }
+    .circle-inv, .circle { top: 43% !important; }
+    .big-option, .med-option, .small-option { line-height: 42px; height: 42px; }
+    .soc-button { width: 45px; height: 45px; line-height: 45px; }
+    .index-menu { margin-bottom: 42px; }
+    .med-menu { top: 202px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
