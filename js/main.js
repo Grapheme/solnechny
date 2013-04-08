@@ -128,8 +128,10 @@ $(function() {
 
 	$('.res').hover(function() {
 		$('.res-img').attr('src', 'img/bron-h.png');
+		$('.nav').css('background','#77654f');
 	}, function() {
 		$('.res-img').attr('src', 'img/bron.png');
+		$('.nav').css('background','white');
 	});
 
 	$(".facebook").hover(function() {

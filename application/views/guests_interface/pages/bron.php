@@ -5,6 +5,10 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
 <?php $this->load->view("guests_interface/includes/head");?>
+<<<<<<< HEAD
+=======
+<link rel="stylesheet" href="css/jquery-ui/jquery.ui.theme.css">
+>>>>>>> 1px + calendar style
 </head>
 <body>
 	<!--[if lt IE 7]>
@@ -137,5 +141,10 @@
 	<?php $this->load->view("guests_interface/includes/footer");?>
 	<?php $this->load->view("guests_interface/includes/scripts");?>
 	<?php $this->load->view("guests_interface/includes/metrika");?>
+<<<<<<< HEAD
+=======
+	<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+	<script src="js/cal.js"></script>
+>>>>>>> 1px + calendar style
 </body>
 </html>

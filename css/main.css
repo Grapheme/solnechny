@@ -686,6 +686,10 @@ footer .bottom {
     color:#ffffff;
 }
 
+.res:hover .nav{
+	background:#77654f;
+}
+
 .res.big{
     width: 22%;
 }

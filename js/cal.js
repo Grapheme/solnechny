@@ -22,7 +22,7 @@ $(function() {
 
     $( ".date" ).datepicker({
         dateFormat: "yy-mm-dd",
-        minDate: 0,
+        minDate: +1,
         maxDate: +30,
         hideIfNoPrevNext: true,
         showAnim: "fadeIn"
