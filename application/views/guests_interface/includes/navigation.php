@@ -14,7 +14,7 @@
 		<div class="top-med">
 			<ul>
 				<li><a class="med-option def" href="#">МЕНЮ</a></li>
-				<li><a class="med-option res" href=<?=site_url('bron');?>">БРОНИРОВАНИЕ</a></li>
+				<li><a class="med-option res" href="<?=site_url('bron');?>">БРОНИРОВАНИЕ</a></li>
 			</ul>
 		</div>
 	</nav>
