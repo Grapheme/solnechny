@@ -23,6 +23,7 @@
 	</div>
 	<?php $this->load->view("guests_interface/includes/slider");?>
 	<?php $this->load->view("guests_interface/includes/navigation-index");?>
+	
 	<div class="main-1">
 		<a class="circle"></a>
 		<a href="<?=site_url('about');?>" class="circle-inv">
@@ -76,7 +77,7 @@
 				<div class="text">По выходным в «Солнечном» выступают лучшие музыканты и диджеи. Бронируйте столики заранее.</div>
 			</div>
 		</a>
-		<img class="main-arrow-up" src="<?=site_url('img/main-up.png');?>.png">
+		<img class="main-arrow-up" src="<?=site_url('img/main-up.png');?>">
 	</div>
 	<?php $this->load->view("guests_interface/includes/scripts");?>
 	<?php $this->load->view("guests_interface/includes/metrika");?>

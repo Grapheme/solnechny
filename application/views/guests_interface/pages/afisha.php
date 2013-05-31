@@ -31,13 +31,13 @@
 							</div>
 							-->
 						</div>
-						<div class="afisha-con">
+						<div class="afisha-con clearfix">
 							<div class="grid3">
 							<?php for($i=0;$i<count($events);$i++):?>
 								<div class="col">
 									<div class="afisha-inside">
 										<div class="afisha-date"><?=month_date_without_year($events[$i]['date']);?></div>
-										<a href="<?=site_url('afisha/'.$events[$i]['translit'])?>">
+										<a>
 											<img class="afisha-img" src="<?=site_url('loadimage/events/'.$events[$i]['id']);?>">
 											<div class="afisha-text">
 												<p><?=$events[$i]['title'];?></p>

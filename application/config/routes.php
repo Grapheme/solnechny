@@ -35,3 +35,5 @@ $route[ADMIN_START_PAGE] = "admin_interface/events";
 $route[ADMIN_START_PAGE.'/add'] = "admin_interface/insertEvent";
 $route[ADMIN_START_PAGE.'/edit/:num'] = "admin_interface/editEvent";
 $route[ADMIN_START_PAGE.'/edit'] = "admin_interface/editEvent";
+
+$route['administrator/booking'] = "admin_interface/booking";

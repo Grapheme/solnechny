@@ -19,18 +19,19 @@
 		<?php $this->load->view("guests_interface/includes/header");?>
 			<div class="white-div">
 			<?php $this->load->view("guests_interface/includes/navigation");?>
+			
 				<article>
 					<div class="page-top">
 						<img class="star" src="<?=site_url('img/ship.png');?>">
 						<div class="afisha-title"><div class="title-line"> </div>БАССЕЙН<div class="title-line"> </div></div>
 						<div class="about-links">
-							<a class="about_link" href="<?=site_url('pool#about');?>">О БАССЕЙНЕ</a>
-							<a class="about_link" href="<?=site_url('pool#rules');?>">ПРАВИЛА</a>
-							<a class="about_link" href="<?=site_url('pool#booking');?>">БРОНИРОВАНИЕ</a>
+							<a class="about_link" href="pool.html#about">О БАССЕЙНЕ</a>
+							<a class="about_link" href="pool.html#rules">ПРАВИЛА</a>
+							<a class="about_link" href="pool.html#booking">БРОНИРОВАНИЕ</a>
 						</div>
 					</div>
 					<div class="about-con">
-						<img class="photo-left" src="img/photo-left.png">
+						<img class="photo-left" src="<?=site_url('img/photo-left.png');?>">
 						<div class="about-img-div">
 							<div class="fotorama" data-arrows="false" data-width="100%" data-nav="dots" data-loop="true" data-autoplay="8000" data-cropToFit="true">
 								<img src="<?=site_url('img/pool/1.jpg');?>">
@@ -42,16 +43,18 @@
 					</div>
 					<a name="about"> </a>
 					<div class="page-title">
-						Зона отдыха вокруг бассейна – это эпицентр «Солнечной» активности. Здесь кажется, что море совсем близко. Повсюду фейерверки водных брызг, волейбольный азарт, взмахи шейкера за барной стойкой, смех и танцы под жизнерадостные летние хиты.
+						Зона отдыха вокруг бассейна – это эпицентр «Солнечной» активности. Здесь кажется, что море совсем близко. Повсюду фейерверки водных брызг, 
+						волейбольный азарт, взмахи шейкера за барной стойкой, смех и танцы под жизнерадостные летние хиты.
 					</div>
 					<div class="grid2 page-main-text" style="display: table">
 						<div class="col text">
-							В вашем распоряжении естественный солярий с шезлонгами и зонтами, площадка для пляжного волейбола, бар с впечатляющей коктейльной картой и легкими закусками. Подогреваемые бассейны поддерживают комфортную температуру с мая по октябрь. Для детей организована игровая площадка с песочницей, мини-бассейном и водной горкой.
-							Если вы предпочитаете  отдыхать на расстоянии от общего веселья,
+							В вашем распоряжении естественный солярий с шезлонгами и зонтами, площадка для пляжного волейбола, бар с впечатляющей коктейльной картой и 
+							легкими закусками. Подогреваемые бассейны поддерживают комфортную температуру с мая по ноябрь. Для детей организована игровая площадка с песочницей, 
+							мини-бассейном и водной горкой. Если вы предпочитаете  отдыхать на расстоянии от общего веселья,
 						</div>
 						<div class="col">
-							забронируйте  vip-беседку с большим матрасом, на котором с комфортом разместится компания из 6-8 человек. В беседку вы можете заказать блюда из ресторана.
-							Для особых гостей на втором уровне комплекса есть лаунж-терраса  с видом на комплекс. Уютный белоснежный шатер площадью 150 квадратных метров  с двухместными лежаками, телевизором и персональным обслуживанием.
+							Забронируйте vip-беседку с большим матрасом, на котором с комфортом разместится компания до 8 человек. В беседку вы можете заказать блюда из ресторана.
+							Для гостей клуба на втором уровне комплекса есть уютная лаунж-терраса с видом на комплекс, двухместными лежаками, телевизором и персональным обслуживанием.
 						</div>
 					</div>
 					<a name="rules"> </a>
@@ -61,20 +64,16 @@
 					<div class="grid2 rules" style="display: table;">
 						<div class="col">
 							<div class="rule"><span class="dot">•</span><div class="rule-text">Загородный клуб «Солнечный», прежде всего, ориентирован на комфортный семейный отдых. На территории комплекса можно курить только в специально отведенных местах, а с 13:00 до 14:00 в клубе играет тихая спокойная музыка, чтобы малыши могли отдохнуть.</div></div>
-							<div class="rule"><span class="dot">•</span><div class="rule-text">При входе оплачивается стоимость шезлонга – 1 500 рублей в день.</div></div>
-							<div class="rule"><span class="dot">•</span><div class="rule-text">Дети от 3 до 7 лет  – скидка 50%</div></div>
+							<div class="rule"><span class="dot">•</span><div class="rule-text">При входе оплачивается стоимость шезлонга. <br/> ПН-ЧТ &mdash; 1000 рублей, ПТ-ВС &mdash; 1 200 рублей.</div></div>
+							<div class="rule"><span class="dot">•</span><div class="rule-text">Дети до 3 лет – вход бесплатно, располагаются на шезлонге с родителями.</div></div>
 						</div>
 						<div class="col">
-							<div class="rule"><span class="dot">•</span><div class="rule-text">Дети до 3 лет – вход бесплатно, располагаются на шезлонге с родителями</div></div>
-							<div class="rule"><span class="dot">•</span><div class="rule-text">Бронирование одной из девяти vip-беседок вместимостью от 6 до 8 человек - 15 000 день, депозит 3000 рублей.  В каждой беседке есть матрас и зонт 3мx2,5 м.</div></div>
-							<div class="rule"><span class="dot">•</span><div class="rule-text">Super-vip -терраса на втором уровне, 150 кв. м  – всегда в резерве, точная стоимость при бронировании.</div></div>
+							<div class="rule"><span class="dot">•</span><div class="rule-text">Дети от 3 до 10 лет &mdash; скидка 30%</div></div>
+							<div class="rule"><span class="dot">•</span><div class="rule-text">Бронирование одной из девяти беседок вместимостью до 8 человек - 10 000 день, депозит 2000 рублей.</div></div>
+							<div class="rule"><span class="dot">•</span><div class="rule-text">VIP-терраса на втором уровне, 150 кв. м  – всегда в резерве, точная стоимость при бронировании.</div></div>
 						</div>
 					</div>
 					<a name="booking"> </a>
-					<div class="pool-rent">
-						Стоимость аренды простого лежака на целый день - <b>1500 руб.</b><br>
-						Стоимость аренды VIP-беседки на 8 персон - <b>15000 руб.</b>, депозит - <b>3000 руб.</b>
-					</div>
 					<div class="pool-button"> </div>
 					<!--
 					<div class="pool-button"><input class="sbutton" type="button" value="ЗАБРОНИРОВАТЬ ЛЕЖАК" onclick="window.location='bron.html'"></div>

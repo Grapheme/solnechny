@@ -35,6 +35,6 @@
 		<!-- <a class="soc-button index facebook" href="#" target="_blank"><img src="img/facebook.png" alt=""></a> -->
 	</div>
 	<div class="logo main">
-		<img src="<?=site_url('img\logo.png');?>" alt="">
+		<img src="<?=site_url('img/logo.png');?>" alt="">
 	</div>
 </header>

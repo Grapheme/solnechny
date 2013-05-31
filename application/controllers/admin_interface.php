@@ -55,5 +55,14 @@ class Admin_interface extends MY_Controller{
 		$this->load->view("admin_interface/events/update-event",$pagevar);
 	}
 	
-	
+	public function booking(){
+		
+		$this->load->model('booking');
+		$this->load->helper('date');
+		$pagevar = array(
+			'sunbeds' => $this->booking->read_records('booking'),
+		);
+		$this->session->set_userdata('backpath',site_url(uri_string()));
+		$this->load->view("admin_interface/sunbeds/sunbeds-list",$pagevar);
+	}
 }

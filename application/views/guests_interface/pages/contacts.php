@@ -31,13 +31,13 @@
 							Мы находимся в 10 км от Ростова-на-Дону, <br/>в приятном соседстве с элитным жилым поселком «Солнечный».
 						</p>
 						<p class="cont-text">МКР &laquo;Солнечный&raquo;<br>г. Батайск, шоссе Восточное, 17 Б</p>
-						<div class="ya-map-link"><a href="http://maps.yandex.ru/?um=CBuJeKP_Ekg6rKw_YeXUQrnRgS2hKWp5&l=map">КАРТА ЯНДЕКС</a></div>
+						<div class="ya-map-link"><a href="#">КАРТА ЯНДЕКС</a></div>
 						<div class="cont-text">T.: 8 (863) 295-51-10</div>
-						<?=safe_mailto('info@sk-stroikov.ru','info@sk-stroikov.ru','class="cont-email"');?>
-						<div class="cont-title">БРОНИРОВАНИЕ ЛЕЖАКОВ</div>
+						<a class="cont-email" href="mailto:info@sk-stroikov.ru">info@sk-stroikov.ru</a>
+						<div class="cont-title">БРОНИРОВАНИЕ ШЕЗЛОНГОВ</div>
 						<div class="cont-text">T.: 8 (863) 295-51-11</div>
 						<div class="cont-title">РЕЖИМ РАБОТЫ</div>
-						<div class="cont-text">Мы рады принять наших гостей ежедневно<br>с 11.00 до 12.00 ночи</div>
+						<div class="cont-text">Мы рады принять наших гостей ежедневно<br>с 10.00 до 23.00</div>
 					</div>
 					<form action="<?=site_url('send-feedback');?>" method="post" id="form-feedback">
 						<div class="feedback">
