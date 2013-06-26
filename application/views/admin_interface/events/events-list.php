@@ -36,7 +36,7 @@
 								<td><?=getStatus($events[$i]['id'],$events[$i]['arhive']);?></td>
 								<td><?=swap_dot_date_without_time($events[$i]['date']);?></td>
 								<td>
-									<a href="<?=site_url(ADMIN_START_PAGE.'/edit/'.$events[$i]['id'])?>" class="btn">Редак.</a>
+									<a href="<?=site_url(ADMIN_START_PAGE.'/edit/'.$events[$i]['id'])?>" class="btn">Ред.</a>
 									<a href="<?=site_url(ADMIN_START_PAGE.'/delete/'.$events[$i]['id'])?>" class="btn btn-inverse disabled none">Удал.</a>
 								</td>
 							</tr>

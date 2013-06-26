@@ -13,6 +13,9 @@ $route['admin/event/update'] = "ajax_interface/updateEvent";
 $route['admin/event/delete'] = "ajax_interface/deleteEvent";
 $route['admin/events/save/photo'] = "ajax_interface/updateEventPhoto";
 $route['change-event-status'] = "ajax_interface/changeEventStatus";
+$route['set-sundeb-statuses'] = "ajax_interface/setSundebStatuses";
+$route['get-sundeb-statuses'] = "ajax_interface/getSundebStatuses";
+
 /*************************************************** USERS INTRERFACE ***********************************************/
 /*************** pages ****************/
 $route['admin'] = "guests_interface/loginIn";
@@ -36,4 +39,4 @@ $route[ADMIN_START_PAGE.'/add'] = "admin_interface/insertEvent";
 $route[ADMIN_START_PAGE.'/edit/:num'] = "admin_interface/editEvent";
 $route[ADMIN_START_PAGE.'/edit'] = "admin_interface/editEvent";
 
-$route['administrator/booking'] = "admin_interface/booking";
+$route['admin/booking'] = "admin_interface/booking";

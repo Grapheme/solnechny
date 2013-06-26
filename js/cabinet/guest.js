@@ -3,6 +3,7 @@
  */
 
 (function($){
+	intervalID = window.setInterval(function(){getSunbedStatuses('')},5000);
 	var mainOptions = {target: '#form-request',beforeSubmit: mt.ajaxBeforeSubmit,success: mt.ajaxSuccessSubmit,type:'post'};
 	$("#form-feedback").submit(function(){
 		var options = mainOptions;

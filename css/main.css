@@ -749,14 +749,27 @@ footer .bottom {
     width:1030px;
     left:50%;
 }
+.plan-div .pool-schema { position: relative; }
+
 .plan-photo {
     width:1030px;
 }
+.plan-photo.schema { margin: 1em 0; }
 
 .plan-con {
     width:100%;
     overflow-x: auto;
 }
+.plan-con.pattern { background: url('../img/schema-pattern.jpg') repeat; padding: 3em 0 6em; margin: 3em 0; }
+
+.sunbed { background-color: #91806f; width: 44px; height: 19px; color: #fff; text-align: center; line-height: 19px; font-size: 12px; opacity: 0.8; position: absolute; cursor: default; }
+.sunbed.current { background-color: #51c1da; }
+.sunbed.engaged { background-color: #e96b16; }
+.sunbed.current.engaged { background-color: #51c1da; }
+#sunbed-16 { top: 20.34em; right: 16.7em; }
+#sunbed-17 { top: 22.6em; right: 16.7em; }
+#sunbed-18 { top: 20.34em; right: 21.9em; }
+#sunbed-19 { top: 22.6em; right: 21.9em; }
 
 .plan-text {
     z-index: 1;
@@ -1404,7 +1417,6 @@ div.bron-onetop {
 .table div {display:table-row;}
 .table div:first-child { padding-right: 2em;}
 .table div div {display:table-cell}
-
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
     .nav-big { display: none; visibility: hidden;}

@@ -34,7 +34,7 @@
 				<textarea rows="6" class="span9 ckeditor" name="content"><?=$event['content'];?></textarea>
 			</div>
 			<button type="submit" id="btn-submit-event" value="" name="submit" class="btn btn-primary btn-large btn-block">Сохранить</button>
-			<div class="wait-request hidden"><img src="<?=site_url('img/loading.gif');?>" alt="" /></div>
+			<div class="wait-request hidden"></div>
 		<?= form_close(); ?>
 	</div>
 </div>

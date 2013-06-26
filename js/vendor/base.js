@@ -18,6 +18,19 @@ mt.formSerialize = function(objects){
 		if(data === ''){data = name+"="+value;}else{data = data+"&"+name+"="+value;}});
 	return data;
 };
+mt.sunbedsSerialize = function(){
+	
+	var data = '';
+	if($("div.current").length > 0){
+		$("div.current").each(function(i,element){
+			data = data+$(element).html()+', ';
+		});
+		return '{"numbers": ['+data+'0]}';
+	}else{
+		return false;
+	}
+	
+}
 mt.matches_parameters = function(parameter1,parameter2){
 	var param1 = new String(parameter1);
 	var param2 = new String(parameter2);
@@ -85,6 +98,19 @@ mt.ajaxBeforeSubmit = function(formData,jqForm,options){
 mt.ajaxSuccessSubmit = function(responseText,statusText,xhr,jqForm){
 	$(jqForm).find("div.wait-request").addClass('hidden');
 	$(jqForm).find("div.div-form-operation").removeClass('hidden');
+}
+function getSunbedStatuses(date){
+	$.ajax({
+		url: mt.baseURL+'get-sundeb-statuses',data: {'date':date},type: 'POST',dataType: 'json',
+		beforeSend: function(){},
+		success: function(data,textStatus,xhr){
+			$("div.sunbed").removeClass('engaged');
+			if(data.status == true){
+				$(data.sunbeds).addClass('engaged');
+			}
+		},
+		error: function(xhr,textStatus,errorThrown){}
+	});
 }
 $(function(){
 	$.fn.exists = function(){return $(this).length;}

@@ -57,10 +57,8 @@ class Admin_interface extends MY_Controller{
 	
 	public function booking(){
 		
-		$this->load->model('booking');
-		$this->load->helper('date');
 		$pagevar = array(
-			'sunbeds' => $this->booking->read_records('booking'),
+			'sunbeds' => array(),
 		);
 		$this->session->set_userdata('backpath',site_url(uri_string()));
 		$this->load->view("admin_interface/sunbeds/sunbeds-list",$pagevar);

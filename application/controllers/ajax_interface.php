@@ -178,6 +178,57 @@ class Ajax_interface extends MY_Controller{
 		echo json_encode($json_request);
 	}
 	
+	/********************************************** sunbeds *******************************************************/
+	
+	public function setSundebStatuses(){
+		
+		if(!$this->input->is_ajax_request()):
+			show_error('В доступе отказано');
+		endif;
+		if(!$this->loginstatus):
+			show_error('В доступе отказано');
+		endif;
+		$json_request = array('status'=>FALSE);
+		$sunbeds = $this->input->post('sunbeds');
+		$metod = $this->input->post('metod');
+		$date = preg_replace("/(\d+)\.(\w+)\.(\d+)/i","\$3-\$2-\$1",$this->input->post('date'));
+		if($sunbeds != FALSE && $metod != FALSE):
+			$sunbeds = json_decode($sunbeds,TRUE);
+			array_pop($sunbeds['numbers']);
+			$this->load->model('booking');
+			if($metod == 'free'):
+				$this->booking->deleteFreeSunbeds($sunbeds['numbers'],$date);
+			elseif($metod == 'engaged'):
+				$this->booking->addEngagedSunbeds($sunbeds['numbers'],$date);
+			endif;
+			$json_request['status'] = TRUE;
+		endif;
+		echo json_encode($json_request);
+		
+		
+	}
+
+	public function getSundebStatuses(){
+		
+		if(!$this->input->is_ajax_request()):
+			show_error('В доступе отказано');
+		endif;
+		if(!$this->loginstatus):
+			show_error('В доступе отказано');
+		endif;
+		$json_request = array('status'=>FALSE,'sunbeds'=>array());
+		if($this->input->post('date') != FALSE):
+			$date = preg_replace("/(\d+)\.(\w+)\.(\d+)/i","\$3-\$2-\$1",$this->input->post('date'));
+		else:
+			$date = date("Y-m-d");
+		endif;
+		$this->load->model('booking');
+		if($json_request['sunbeds'] = $this->booking->getSunbedsOnDate($date)):
+			$json_request['status'] = TRUE;
+		endif;
+		echo json_encode($json_request);
+	}
+	
 	/******************************************** security *******************************************************/
 	public function securityOperationItem(){
 		
