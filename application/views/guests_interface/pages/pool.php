@@ -24,13 +24,8 @@
 					<div class="page-top">
 						<img class="star" src="<?=site_url('img/ship.png');?>">
 						<div class="afisha-title"><div class="title-line"> </div>БАССЕЙН<div class="title-line"> </div></div>
-						<div class="about-links">
-							<a class="about_link" href="pool.html#about">О БАССЕЙНЕ</a>
-							<a class="about_link" href="pool.html#rules">ПРАВИЛА</a>
-							<a class="about_link" href="pool.html#booking">БРОНИРОВАНИЕ</a>
-						</div>
 					</div>
-					<div class="about-con">
+					<div class="about-con" style="margin-top: 25px;">
 						<img class="photo-left" src="<?=site_url('img/photo-left.png');?>">
 						<div class="about-img-div">
 							<div class="fotorama" data-arrows="false" data-width="100%" data-nav="dots" data-loop="true" data-autoplay="8000" data-cropToFit="true">
