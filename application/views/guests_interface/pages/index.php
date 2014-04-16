@@ -51,8 +51,8 @@
 		<a href="<?=site_url('child');?>" class="circle-inv">
 			<div class="circle-div">
 				<img src="<?=site_url('img/hor.png');?>" alt=""><br>
-				<span class="title">ДЕТСКИЙ КЛУБ</span>
-				<div class="text">Детский клуб объединяет игровую комнату, творческий класс и спортивный городок с бассейном.</div>
+				<span class="title">СПА ЗОНА</span>
+				<div class="text">Спа-зона объединяет хамам, сауну и кабинет массажа. Здесь царит тепло и гармония во всем.</div>
 			</div>
 		</a>
 		<img class="main-arrow-down" src="<?=site_url('img/main-down.png');?>" id="3">
@@ -79,6 +79,36 @@
 		</a>
 		<img class="main-arrow-up" src="<?=site_url('img/main-up.png');?>">
 	</div>
+	<div class="popup-overlay">
+    	<div class="social-popup">
+    		<a href="#" class="close">Х</a>
+    		<div class="question">
+    			<input type="checkbox" id="no-show-popup" />
+    			Больше не показывать это окно
+    		</div>
+    		<div class="vk-widget">
+        		<script type="text/javascript" src="//vk.com/js/api/openapi.js?96"></script>
+				<!-- VK Widget -->
+				<div id="vk_groups"></div>
+				<script type="text/javascript">
+				VK.Widgets.Group("vk_groups", {mode: 1, width: "300", height: "290"}, 54576777);
+				</script>
+			</div>
+			<div class="fb-widget">
+				<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1&appId=118650518205495";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+				<div class="fb-like-box" data-href="https://www.facebook.com/solnclub" data-width="300" data-height="290" data-show-faces="false" data-stream="false" data-show-border="true" data-header="false"></div>
+			</div>
+			
+    		<div class="slogan">Самые яркие события <br/> в <span>Солнечном</span></div>
+    	</div>
+    </div>
 	<?php $this->load->view("guests_interface/includes/scripts");?>
 	<?php $this->load->view("guests_interface/includes/metrika");?>
 </body>

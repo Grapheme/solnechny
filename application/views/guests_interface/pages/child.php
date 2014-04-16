@@ -23,22 +23,19 @@
 				<article>
 					<div class="page-top">
 						<img class="star" src="<?=site_url('img/childl.png');?>">
-						<div class="afisha-title"><div class="title-line"></div>ДЕТСКИЙ КЛУБ<div class="title-line"> </div></div>
+						<div class="afisha-title"><div class="title-line"></div>СПА-ЗОНА<div class="title-line"> </div></div>
 					</div>
 					<div class="about-con" style="margin-top: 25px;">
 						<img class="photo-left" src="<?=site_url('img/photo-left.png');?>">
 						<div class="about-img-div">
 							<div class="fotorama" data-arrows="false" data-width="100%" data-nav="dots" data-loop="true" data-autoplay="8000" data-cropToFit="true">
-								<img src="<?=site_url('img/child/1.jpg');?>">
-								<img src="<?=site_url('img/child/2.jpg');?>">
-								<img src="<?=site_url('img/child/3.jpg');?>">
-								<img src="<?=site_url('img/child/4.jpg');?>">
-								<img src="<?=site_url('img/child/5.jpg');?>">
+								<img src="<?=site_url('img/spa/1.jpg');?>">
+								<img src="<?=site_url('img/spa/2.jpg');?>">
 							</div>
 						</div>
 						<img class="photo-right" src="<?=site_url('img/photo-right.png');?>">
 					</div>
-					<div class="page-title">
+					<!--<div class="page-title">
 						Маленькие гости «Солнечного» обязательно останутся довольны, ведь здесь есть всё, что нужно детям – игры и приключения, подарки и сюрпризы, 
 						праздники и веселые торжества!
 					</div>
@@ -90,9 +87,9 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div>-->
 					<div class="child-phone">
-						<span class="wt-title">Задайте вопрос администратору по телефону : 8 (863) 295-51-11</span><br/>
+						<span class="wt-title">Задайте вопрос администратору по телефону : 8 (863) 210-19-02</span><br/>
 						<span class="wt-text">Мы ждем вас с 10:00 до 21:00, с 1 июня до 1 ноября</span><br>
 					</div>
 				</article>
