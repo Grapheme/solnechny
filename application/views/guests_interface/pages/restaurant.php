@@ -21,7 +21,7 @@
 				<?php $this->load->view("guests_interface/includes/navigation");?>
 				<article>
 					<div class="page-top">
-						<img class="star" src="<?=site_url('img/ship.png');?>">
+						<img class="star" src="<?=site_url('img/rest.png');?>">
 						<div class="afisha-title"><div class="title-line"></div>РЕСТОРАН<div class="title-line"></div></div>
 					</div>
 					<div class="about-con" style="margin-top: 25px;">
