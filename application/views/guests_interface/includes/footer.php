@@ -2,17 +2,17 @@
 	<div class="top"> </div>
 	<div class="middle">
 		<div class="footer-top">
-			МКР &laquo;Солнечный&raquo;<br>ТРАССА M4, 10 КМ ОТ РОСТОВА-НА-ДОНУ<br>ТЕЛ.: 8 (863) 295-51-11
+			МКР &laquo;Солнечный&raquo;<br>ТРАССА M4, 10 КМ ОТ РОСТОВА-НА-ДОНУ<br>ТЕЛ.: 8 (863) 210-19-02
 		</div>
 		<div class="footer-imgs">
 			<a href="#" class="soc-button like">
 				<img src="<?=site_url('img/like.png');?>">
 			</a>
-			<a href="#" target="_blank" class="soc-button twitter">
-				<img src="">
+			<a href="http://vk.com/solnclub" target="_blank" class="soc-button twitter">
+				<img src="<?=site_url('img/twitter.png');?>">
 			</a>
-			<a href="#" target="_blank" class="soc-button facebook">
-				<img src="">
+			<a href="https://www.facebook.com/solnclub" target="_blank" class="soc-button facebook">
+				<img src="<?=site_url('img/facebook.png');?>">
 			</a>
 		</div>
 		<div class="footer-middle">
@@ -30,10 +30,10 @@
 					<a href="https://twitter.com/share" class="twitter-share-button" data-via="httpstwittercomStroikov" data-lang="ru" data-related="httpstwittercomStroikov" data-hashtags="solnechny">Твитнуть</a>
 				</div>
 			</div>
-			&copy; 2013 Загородный клуб &laquo;Солнечный&raquo;
+			&copy; <?=date('Y')?> Загородный клуб &laquo;Солнечный&raquo;
 		</div>
 		<div class="footer-bottom">
-			Создание сайта - <a href="http://grapheme.ru/" target="_blank">веб-студия &laquo;Графема&raquo;</a>
+			Создание сайта - <a href="http://grapheme.ru/" target="_blank">Рекламное агентство &laquo;Графема&raquo;</a>
 		</div>
 	</div>
 	<div class="bottom"></div>
