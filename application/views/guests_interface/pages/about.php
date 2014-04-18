@@ -85,8 +85,8 @@
 							<div class="plan-wrapper plan-circle-shiptop"><img src="<?=site_url('img/circle-rest.png');?>" alt=""><div class="plan-text">Ресторан с европейской кухней на 260 посадочных мест.</div></div>
 							<div class="plan-wrapper plan-circle-show"><img src="<?=site_url('img/circle-show.png');?>" alt=""><div class="plan-text">Душевые кабинки.</div></div>
 							<div class="plan-wrapper plan-circle-shipright"><img src="<?=site_url('img/circle-ship.png');?>" alt=""><div class="plan-text">Бассейн 25х20 метров с подогревом в мае и сентябре.</div></div>
-							<div class="plan-wrapper plan-circle-hor"><img src="<?=site_url('img/circle-hor.png');?>" alt=""><div class="plan-text">Детский клуб с аниматорами и опытными педагогами.</div></div>
-							<div class="plan-wrapper plan-circle-bar"><img src="<?=site_url('img/circle-bar.png');?>" alt=""><div class="plan-text">Диджей-бар с напитками и легкими закусками.</div></div>
+							<div class="plan-wrapper plan-circle-hor"><img src="<?=site_url('img/spa.png');?>" alt=""><div class="plan-text">Спа зона.</div></div>
+							<div class="plan-wrapper plan-circle-bar"><img src="<?=site_url('img/grill.png');?>" alt=""><div class="plan-text">Гриль-бар.</div></div>
 							<div class="plan-wrapper plan-circle-park2"><img src="<?=site_url('img/circle-park.png');?>" alt=""><div class="plan-text">Автопарковка на 100 мест для гостей клуба.</div></div>
 							<div class="plan-wrapper plan-circle-vip1"><img src="<?=site_url('img/circle-vip.png');?>" alt=""><div class="plan-text">Лаунж террасса с видом на комплекс и персональным обслуживанием.</div></div>
 							<div class="plan-wrapper plan-circle-vip2"><img src="<?=site_url('img/circle-vip.png');?>" alt=""><div class="plan-text">Приватные беседки на 6-8 человек с большим матрасом.</div></div>

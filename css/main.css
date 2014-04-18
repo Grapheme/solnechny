@@ -991,8 +991,8 @@ footer .bottom {
     left:180px;
 }
 .plan-circle-hor {
-    top:620px;
-    left:260px;
+    top: 740px;
+    left: 464px;
 }
 .plan-circle-bar {
 	top:500px;
@@ -1017,6 +1017,10 @@ footer .bottom {
 .plan-circle-shipright {
     top: 390px;
     left: 640px;
+}
+
+.plan-wrapper:hover {
+    z-index: 3;
 }
 
 .page-title {
