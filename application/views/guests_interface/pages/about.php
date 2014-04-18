@@ -23,10 +23,6 @@
 					<div class="page-top">
 						<img class="star" src="<?=site_url('img/sun.png');?>">
 						<div class="afisha-title"><div class="title-line"> </div>О КЛУБЕ<div class="title-line"> </div></div>
-						<div class="about-links">
-							<a class="about_link" href="<?=site_url('about#about');?>">О КЛУБЕ</a>
-							<a class="about_link" href="<?=site_url('about#map');?>">СХЕМА КОМПЛЕКСА</a>
-						</div>
 					</div>
 					<div class="about-con">
 						<img class="photo-left" src="<?=site_url('img/photo-left.png');?>">

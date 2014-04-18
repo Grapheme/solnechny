@@ -25,13 +25,14 @@
 						<img class="star" src="<?=site_url('img/ship.png');?>">
 						<div class="afisha-title"><div class="title-line"> </div>БАССЕЙН<div class="title-line"> </div></div>
 					</div>
-					<div class="about-con" style="margin-top: 25px;">
+					<div class="about-con">
 						<img class="photo-left" src="<?=site_url('img/photo-left.png');?>">
 						<div class="about-img-div">
 							<div class="fotorama" data-arrows="false" data-width="100%" data-nav="dots" data-loop="true" data-autoplay="8000" data-cropToFit="true">
 								<img src="<?=site_url('img/pool/1.jpg');?>">
 								<img src="<?=site_url('img/pool/2.jpg');?>">
 								<img src="<?=site_url('img/pool/3.jpg');?>">
+								<img src="<?=site_url('img/pool/4.jpg');?>">
 							</div>
 						</div>
 						<img class="photo-right" src="<?=site_url('img/photo-right.png');?>">
@@ -58,15 +59,17 @@
 					</div>
 					<div class="grid2 rules" style="display: table;">
 						<div class="col">
-							<div class="rule"><span class="dot">•</span><div class="rule-text">Загородный клуб «Солнечный», прежде всего, ориентирован на комфортный семейный отдых. На территории комплекса можно курить только в специально отведенных местах, а с 13:00 до 14:00 в клубе играет тихая спокойная музыка, чтобы малыши могли отдохнуть.</div></div>
-							<div class="rule"><span class="dot">•</span><div class="rule-text">При входе оплачивается стоимость шезлонга. <br/> ПН-ЧТ &mdash; 1000 рублей, ПТ-ВС &mdash; 1 200 рублей.</div></div>
-							<div class="rule"><span class="dot">•</span><div class="rule-text">Дети до 3 лет – вход бесплатно, располагаются на шезлонге с родителями.</div></div>
-						</div>
-						<div class="col">
-							<div class="rule"><span class="dot">•</span><div class="rule-text">Дети от 3 до 10 лет &mdash; скидка 30%</div></div>
-							<div class="rule"><span class="dot">•</span><div class="rule-text">Бронирование одной из девяти беседок вместимостью до 8 человек - 10 000 день, депозит 2000 рублей.</div></div>
-							<div class="rule"><span class="dot">•</span><div class="rule-text">VIP-терраса на втором уровне, 150 кв. м  – всегда в резерве, точная стоимость при бронировании.</div></div>
-						</div>
+	                        <div class="rule"><span class="dot">•</span><div class="rule-text">Загородный клуб «Солнечный», прежде всего, ориентирован на комфортный семейный отдых. На территории комплекса можно курить только в специально отведенных местах, а с 13:00 до 14:00 в клубе играет тихая спокойная музыка, чтобы малыши могли отдохнуть.</div></div>
+	                        <div class="rule"><span class="dot">•</span><div class="rule-text">При входе оплачивается стоимость шезлонга. <br/> ПН-ПТ - 1000 рублей, СБ-ВС - 1 200 рублей.</div></div>
+	                        <div class="rule"><span class="dot">•</span><div class="rule-text">При посещении бассейна ПН-ПТ с 16:00 до 21:00 предоставляется скидка 50% при входе.</div></div>
+	                        <div class="rule"><span class="dot">•</span><div class="rule-text">Дети от 3 до 10 лет - скидка 30%</div></div>
+	                    </div>
+	                    <div class="col">
+	                        <div class="rule"><span class="dot">•</span><div class="rule-text">Дети до 3 лет – вход бесплатно, располагаются на шезлонге с родителями.</div></div>
+	                        <div class="rule"><span class="dot">•</span><div class="rule-text">Бронирование одной из девяти беседок вместимостью <nobr>4-6 человек</nobr> - 5 000 день.</div></div>
+	                        <div class="rule"><span class="dot">•</span><div class="rule-text">VIP-терраса на втором уровне, 150 кв. м  – всегда в резерве, точная стоимость при бронировании.</div></div>
+	                        <div class="rule"><span class="dot">•</span><div class="rule-text">Для гостей клуба, проживающих в МКР «Солнечный», предоставляется возможность покупки месячного абонемента на посещение бассейна. Стоимость абонемента составляет <nobr>10 000 рублей</nobr>.</div></div>
+	                    </div>
 					</div>
 					<a name="booking"> </a>
 					<div class="pool-button"> </div>
