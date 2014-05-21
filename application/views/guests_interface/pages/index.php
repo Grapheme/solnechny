@@ -48,10 +48,10 @@
 	</div>
 	<div class="main-3">
 		<a class="circle"></a>
-		<a href="<?=site_url('child');?>" class="circle-inv">
+		<a href="<?=site_url('spa');?>" class="circle-inv">
 			<div class="circle-div">
 				<img src="<?=site_url('img/hor.png');?>" alt=""><br>
-				<span class="title">СПА ЗОНА</span>
+				<span class="title">СПА-ЗОНА</span>
 				<div class="text">Спа-зона объединяет хамам, сауну и кабинет массажа. Здесь царит тепло и гармония во всем.</div>
 			</div>
 		</a>

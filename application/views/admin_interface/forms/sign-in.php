@@ -1,6 +1,6 @@
 <form action="<?=site_url('admin/sign-in');?>" method="POST" class="form-signin" id="form-sign-in">
 	<h4 class="form-signin-heading text-center">Авторизация</h4>
-	<input type="text" name="email" class="input-block-level valid-required valid-email" <?=TOOLTIP_FIELD_BLANK;?> placeholder="Email address">
+	<input type="text" name="email" class="input-block-level valid-required" <?=TOOLTIP_FIELD_BLANK;?> placeholder="Email address">
 	<input type="password" name="password" class="input-block-level valid-required" <?=TOOLTIP_FIELD_BLANK;?> placeholder="Password">
 	<div class="text-center div-form-operation">
 		<div class="text-error form-request"></div>

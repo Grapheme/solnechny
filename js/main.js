@@ -91,7 +91,7 @@ $(function() {
 		$('.res-img').attr('src', 'img/bron.png');
 	});
 
-	$(".facebook").hover(function() {
+	/*$(".facebook").hover(function() {
 		$('.facebook img').attr('src', 'img/facebook-hover.png');
 	}, function() {
 		$('.facebook img').attr('src', 'img/facebook.png');
@@ -113,7 +113,7 @@ $(function() {
 		$('.like.soc-button img').attr('src', 'img/footer-like-hover.png');
 	}, function() {
 		$('.like.soc-button img').attr('src', 'img/like.png');
-	});
+	});*/
 
 	$(".med-option.def").click(function(event) {
 		event.preventDefault();
@@ -175,6 +175,19 @@ $(function() {
 
 	$(window).resize(function() {
 		rlall();
+	});
+	
+	/* social popup */
+	// $.removeCookie('social_popup');
+	if ( $.cookie('social_popup') === undefined && $(window).width() > 820 ) {
+		//$('.popup-overlay').show();
+	}
+	
+	$('.social-popup .close').click(function(){
+		if ( $('#no-show-popup').is(':checked') ) {
+			$.cookie('social_popup', '1');
+		}
+		$('.popup-overlay').hide();
 	});
 
 }); 

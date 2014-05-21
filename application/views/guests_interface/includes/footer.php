@@ -5,16 +5,18 @@
 			МКР &laquo;Солнечный&raquo;<br>ТРАССА M4, 10 КМ ОТ РОСТОВА-НА-ДОНУ<br>ТЕЛ.: 8 (863) 210-19-02
 		</div>
 		<div class="footer-imgs">
+			<!--
 			<a href="#" class="soc-button like">
 				<i class="fa fa-heart"></i>
 			</a>
+			-->
 			<a href="http://vk.com/solnclub" target="_blank" class="soc-button">
 				<i class="fa fa-vk"></i>
 			</a>
 			<a href="https://www.facebook.com/solnclub" target="_blank" class="soc-button">
 				<i class="fa fa-facebook"></i>
 			</a>
-			<a href="#" target="_blank" class="soc-button">
+			<a href="http://instagram.com/solnechnyclub" target="_blank" class="soc-button">
 				<i class="fa fa-instagram"></i>
 			</a>
 		</div>
@@ -36,7 +38,7 @@
 			&copy; <?=date('Y')?> Загородный клуб &laquo;Солнечный&raquo;
 		</div>
 		<div class="footer-bottom">
-			Создание сайта - <a href="http://grapheme.ru/" target="_blank">Рекламное агентство &laquo;Графема&raquo;</a>
+			Создание сайта — <a href="http://grapheme.ru/" target="_blank">ГРАФЕМА</a>
 		</div>
 	</div>
 	<div class="bottom"></div>

@@ -27,11 +27,11 @@
 					&copy; 2013 Загородный клуб &laquo;Солнечный&raquo;
 				</div>
 				<div class="footer-bottom">
-					Создание сайта - <a href="http://grapheme.ru/" target="_blank">веб-студия &laquo;Графема&raquo;</a>
+					Создание сайта — <a href="http://grapheme.ru/" target="_blank">ГРАФЕМА</a>
 				</div>
 			</div>
 		</div>
-		<a class="soc-button index twitter" href="https://twitter.com/Stroikov" target="_blank"><img src="img/twitter.png" alt=""></a>
+		<a class="soc-button index facebook" href="https://www.facebook.com/solnclub" target="_blank"><img src="img/facebook.png" alt=""></a>
 		<!-- <a class="soc-button index facebook" href="#" target="_blank"><img src="img/facebook.png" alt=""></a> -->
 	</div>
 	<div class="logo main">

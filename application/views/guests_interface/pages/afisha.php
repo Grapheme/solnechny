@@ -23,7 +23,7 @@
 						<div class="page-top">
 							<img class="star" src="<?=site_url('img/star.png');?>">
 							<div class="afisha-title"><div class="title-line"></div>АФИША<div class="title-line"></div></div>
-							<div class="page-title">Каждую субботу специально для вас мы проводим концерты известных артистов и ди-джеев.</div>
+							<div class="page-title">Cпециально для вас мы проводим концерты известных артистов и ди-джеев.</div>
 							<!--
 							<div class="about-links">
 								<a class="about_link now" href="#">АНОНСЫ</a>

@@ -90,8 +90,8 @@
 						</div>
 					</div>
 					<div class="work-time">
-						<span class="wt-title">Лучшие места под солнцем бронируйте заранее по телефону: 8 (863) 210-19-02</span></br>
-						<span class="wt-text">Мы ждем вас с 10:00 до 23:00, с 1 июня до 1 ноября</span><br>
+						<span class="wt-title">Лучшие места под солнцем бронируйте заранее по телефону: 8 (863) 210-19-03</span></br>
+						<span class="wt-text">Мы ждем вас с 10:00 до 23:00, с 17 мая до 1 ноября</span><br>
 						<img src="<?=site_url('img/sun.png');?>">
 					</div>
 				</article>

@@ -1227,7 +1227,7 @@ footer .bottom {
 	clear: both;
 	margin: 2em 0 2em 4em;
 }
-.social-likes .one__item, .slide-likes .one__item { float: left; margin: 0 0.5em;  }
+.social-likes .one__item, .slide-likes .one__item { float: left; margin: 0 0.25em;  }
 .slide-likes .one__item:first-child { margin: 0 5em 0 4em; }
 .like-text {
     font-family:'Conv_FedraSansPro Book',Sans-Serif;
